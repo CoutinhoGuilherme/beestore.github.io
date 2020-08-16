@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="icon" href="Bee.jpg" type="image/jpg" sizes="16x16">
+    <script src="index.js"></script>
+</head>
+<body>
+   <div class="hero">
+       <div class="formbox">
+<div class="buttonbox">
+    <div id="btn"></div>
+    <div type="button" class="togglebutton" onclick="login()">Login</div>
+    <div type="button" class="togglebutton" onclick="register()">Register</div>
+</div>
+<div class="social-icons">
+    <i class="fa fa-facebook-square"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter-square"></i>
+</div>
+       </div>
+       <form name="myForm" action="" id="login" class="input-group" onsubmit="return validateForm()" method="post">
+           <input name="fname" type="text" class="input-field" placeholder=" user id" required>
+           <input type="password" class="input-field" placeholder=" password" required id="password">
+           <input type="checkbox" onclick="myFunction()" class="checkbox"><span>Show password</span>
+           <input type="checkbox" class="checkbox"> <span>Remember password</span>
+           <button type="submit" class="submit-button">Login</button>
+        </form>
+   </div>
+</body>
+</html>
